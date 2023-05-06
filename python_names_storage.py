@@ -46,7 +46,7 @@ try:
         artist_name_list_items = artist_name_list.find_all('a')
 
         for artist_name in artist_name_list_items:
-        names = names + artist_name.contents[0] + "\n"
+            names = names + artist_name.contents[0] + "\n"
 
         blob.upload_from_string(names, content_type="text/csv")
 
